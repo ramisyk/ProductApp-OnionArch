@@ -7,10 +7,9 @@ using System.Threading.Tasks;
 
 namespace ProductApp.Application.Interfaces.Repository
 {
-    public interface IProductRepository
+    public interface IProductRepository:IGenericRepositoryAsync<Product>
     {
-        Task<List<Product>> GetAllProduct();
-        Task<Product> GetProductById(Guid id);
+        
     }
 
 }
